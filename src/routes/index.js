@@ -17,7 +17,7 @@ function App() {
         backgroundColor: 'black',
         headerShown: false
       }}>
-        <Stack.Screen name="Start" component={StartScreen} />
+        <Stack.Screen name="Start" component={StartScreen}/>
         <Stack.Screen name="Verify" component={Verify} />
       </Stack.Navigator>
     </NavigationContainer>

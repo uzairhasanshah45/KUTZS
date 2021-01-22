@@ -44,7 +44,7 @@ const StartScreen = (props) => {
             </Text>
           ))}
         </View>
-        <TouchableOpacity style={styles.verify}>
+        <TouchableOpacity style={styles.verify} onPress={() => props.navigation.navigate('Start')}> 
           <Text style={styles.verifyTxt}>Verify</Text>
         </TouchableOpacity>
       </LinearGradient>
@@ -95,7 +95,7 @@ export const styles = ScaledSheet.create({
     padding: '13@ms',
     width: '55@ms',
     textAlign: 'center',
-    fontSize: '22@ms'
+    fontSize: '22@ms',
   },
   verify: {
     backgroundColor: 'white', 
